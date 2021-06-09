@@ -40,7 +40,7 @@ async function searchShows(query) {
   let response = null;
   let results = [];
   try {
-    response = await axios.get(`http://api.tvmaze.com/search/shows?q=${query}`);
+    response = await axios.get(`https://api.tvmaze.com/search/shows?q=${query}`);
     response = response.data;
   } catch(error) {
     response = [invalid];
