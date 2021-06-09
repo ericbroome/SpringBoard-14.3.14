@@ -136,7 +136,7 @@ async function getEpisodes(id) {
   let response = null;
   let results = [];
   try {
-    response = await axios.get(`http://api.tvmaze.com/shows/${id}/episodes`)
+    response = await axios.get(`https://api.tvmaze.com/shows/${id}/episodes`)
     response = response.data;
   } catch(error) {
     response = [invalid];
